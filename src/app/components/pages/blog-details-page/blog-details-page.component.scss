@@ -9,28 +9,28 @@
 
         .entry-meta {
             ul {
-                padding-right: 0;
+                padding-left: 0;
                 margin-bottom: 0;
                 list-style-type: none;
     
                 li {
-                    margin-left: 20px;
+                    margin-right: 20px;
                     position: relative;
                     display: inline-block;
-                    border-left: 1px solid #eeeeee;
+                    border-right: 1px solid #eeeeee;
                     font: {
                         weight: 500;
                         size: 16px;
                     };
                     padding: {
-                        left: 20px;
-                        right: 45px;
+                        right: 20px;
+                        left: 45px;
                     };
                     i {
                         font-size: 30px;
                         color: #cfcfcf;
                         position: absolute;
-                        right: 0;
+                        left: 0;
                         top: 50%;
                         transform: translateY(-50%);
                     }
@@ -53,9 +53,9 @@
                         }
                     }
                     &:last-child {
-                        padding-left: 0;
-                        margin-left: 0;
-                        border-left: none;
+                        padding-right: 0;
+                        margin-right: 0;
+                        border-right: none;
                     }
                 }
             }
@@ -72,7 +72,7 @@
         }
         .wp-block-gallery {
             &.columns-3 {
-                padding-right: 0;
+                padding-left: 0;
                 list-style-type: none;
                 display: -ms-flexbox;
                 display: flex;
@@ -99,7 +99,7 @@
             }
         }
         .features-list {
-            padding-right: 0;
+            padding-left: 0;
             list-style-type: none;
             margin: {
                 top: 25px;
@@ -108,7 +108,7 @@
             li {
                 margin-bottom: 15px;
                 position: relative;
-                padding-right: 28px;
+                padding-left: 28px;
                 color: var(--paragraphColor);
 
                 i {
@@ -116,7 +116,7 @@
                     display: inline-block;
                     font-size: 20px;
                     position: absolute;
-                    right: 0;
+                    left: 0;
                     top: 0;
                 }
                 &:last-child {
@@ -141,7 +141,7 @@
             span {
                 display: inline-block;
                 color: var(--blackColor);
-                margin-left: 3px;
+                margin-right: 3px;
                 position: relative;
                 top: 3px;
                 font: {
@@ -164,19 +164,19 @@
             max-width: 50%;
             
             .social {
-                padding-right: 0;
+                padding-left: 0;
                 list-style-type: none;
-                text-align: left;
+                text-align: right;
                 margin: {
                     bottom: 0;
                 };
                 li {
                     display: inline-block;
-                    margin-right: 5px;
+                    margin-left: 5px;
 
                     span {
                         display: inline-block;
-                        margin-left: 3px;
+                        margin-right: 3px;
                         font-weight: 500;
                         color: var(--paragraphColor);
                         position: relative;
@@ -193,7 +193,7 @@
                         border: 1px solid var(--mainColor);
                         text-align: center;
                         font-size: 17px;
-                        margin-right: 2px;
+                        margin-left: 2px;
         
                         &:hover, &:focus {
                             color: var(--mainColor);
@@ -340,7 +340,7 @@
     }
     .comment-body {
         border-bottom: 1px dashed #eeeeee;
-        padding-right: 65px;
+        padding-left: 65px;
         color: var(--blackColor);
         font-size: 14px;
         margin-bottom: 20px;
@@ -376,7 +376,7 @@
 
         .avatar {
             height: 50px;
-            right: -65px;
+            left: -65px;
             position: absolute;
             width: 50px;
         }
@@ -432,7 +432,7 @@
             }
         }
         .comment-form-comment {
-            float: right;
+            float: left;
             width: 100%;
         }
         label {
@@ -443,7 +443,7 @@
             width: 100%;
             background-color: #f4f4f4;
             border: none;
-            padding: 0 15px 0 0;
+            padding: 0 0 0 15px;
             height: 50px;
             outline: 0;
             border-radius: 3px;
@@ -467,34 +467,34 @@
             padding-top: 15px;
         }
         .comment-form-author {
-            float: right;
+            float: left;
             width: 50%;
-            padding-left: 10px;
+            padding-right: 10px;
             margin-bottom: 20px;
         }
         .comment-form-email {
-            float: right;
+            float: left;
             width: 50%;
-            padding-right: 12px;
+            padding-left: 12px;
             margin-bottom: 20px;
         }
         .comment-form-url {
-            float: right;
+            float: left;
             width: 100%;
             margin-bottom: 20px;
         }
         .comment-form-cookies-consent {
             width: 100%;
-            float: right;
+            float: left;
             position: relative;
-            padding-right: 20px;
+            padding-left: 20px;
             margin: {
                 bottom: 20px;
                 top: 15px;
             };
             input {
                 position: absolute;
-                right: 0;
+                left: 0;
                 top: 5px;
             }
             label {
@@ -510,7 +510,7 @@
             }
         }
         .form-submit {
-            float: right;
+            float: left;
             width: 100%;
 
             input {
@@ -549,11 +549,11 @@
                         font-size: 14px;
                         margin: {
                             bottom: 15px;
-                            left: 15px;
+                            right: 15px;
                         };
                         padding: {
-                            left: 15px;
-                            right: 0;
+                            right: 15px;
+                            left: 0;
                         };
                         i {
                             display: none;
@@ -617,7 +617,7 @@
         .comment-author {
             .avatar {
                 height: 50px;
-                right: 0;
+                left: 0;
                 position: relative;
                 width: 50px;
                 display: block;
@@ -625,7 +625,7 @@
             }
         }
         .comment-body {
-            padding-right: 0;
+            padding-left: 0;
         }
         .comment-respond {
             .comment-reply-title {
@@ -633,11 +633,11 @@
             }
             .comment-form-author {
                 width: 100%;
-                padding-left: 0;
+                padding-right: 0;
             }
             .comment-form-email {
                 width: 100%;
-                padding-right: 0;
+                padding-left: 0;
             }
             .form-submit input {
                 font-size: 15px;
@@ -650,7 +650,7 @@
 
     .blog-details-desc {
         .article-footer {
-            text-align: right;
+            text-align: left;
             
             .article-tags {
                 flex: 0 0 50%;
@@ -661,7 +661,7 @@
                 max-width: 50%;
 
                 .social {
-                    text-align: left;
+                    text-align: right;
                     margin-top: 0;
                 }
             }
@@ -673,11 +673,11 @@
                 position: absolute;
                 display: inline-block;
                 margin-bottom: 0;
-                right: -65px;
+                left: -65px;
             }
         }
         .comment-body {
-            padding-right: 65px;
+            padding-left: 65px;
         }
     }
 

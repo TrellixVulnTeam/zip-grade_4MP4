@@ -24,7 +24,7 @@
 .hero-banner-content {
     overflow: hidden;
     max-width: 540px;
-    margin-right: auto;
+    margin-left: auto;
 
     .sub-title {
         display: block;
@@ -32,7 +32,7 @@
         margin-bottom: 17px;
         text-transform: uppercase;
         position: relative;
-        padding-right: 10px;
+        padding-left: 10px;
         font: {
             size: 14px;
             weight: 700;
@@ -40,7 +40,7 @@
         &::before {
             content: '';
             position: absolute;
-            right: 0;
+            left: 0;
             top: 0;
             height: 100%;
             width: 3px;
@@ -75,7 +75,7 @@
             display: inline-block;
             color: var(--whiteColor);
             position: relative;
-            margin-right: 25px;
+            margin-left: 25px;
             font: {
                 size: var(--fontSize);
                 weight: 600;
@@ -83,7 +83,7 @@
             &::before {
                 content: '';
                 position: absolute;
-                right: 0;
+                left: 0;
                 bottom: 0;
                 width: 100%;
                 height: 2px;
@@ -93,7 +93,7 @@
             &::after {
                 content: '';
                 position: absolute;
-                left: 0;
+                right: 0;
                 bottom: 0;
                 width: 0;
                 height: 2px;
@@ -108,8 +108,8 @@
                 }
                 &::after {
                     width: 100%;
-                    left: auto;
-                    right: 0;
+                    right: auto;
+                    left: 0;
                 }
             }
         }
@@ -143,7 +143,7 @@
 }
 .hero-banner-image {
     position: relative;
-    padding-right: 15px;
+    padding-left: 15px;
 
     img {
         animation: border-transform 10s linear infinite alternate forwards;
@@ -161,11 +161,11 @@
     }
     .hero-banner-content {
         max-width: 100%;
-        margin-right: 0;
+        margin-left: 0;
         text-align: center;
 
         .sub-title {
-            padding-right: 0;
+            padding-left: 0;
             margin-bottom: 13px;
             font: {
                 weight: 500;
@@ -188,16 +188,16 @@
             margin-top: 30px;
 
             .default-btn {
-                margin-left: 6px;
+                margin-right: 6px;
             }
             .optional-btn {
-                margin-right: 6px;
+                margin-left: 6px;
                 font-size: 13px;
             }
         }
     }
     .hero-banner-image {
-        padding-right: 0;
+        padding-left: 0;
         margin-top: 30px;
     }
 
@@ -231,7 +231,7 @@
     }
     .hero-banner-content {
         max-width: 650px;
-        margin-right: 0;
+        margin-left: 0;
 
         .sub-title {
             font-size: 13px;
@@ -249,7 +249,7 @@
         }
     }
     .hero-banner-image {
-        padding-right: 0;
+        padding-left: 0;
         margin-top: 30px;
     }
 

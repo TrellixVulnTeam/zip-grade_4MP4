@@ -32,11 +32,10 @@
 		autoplayHoverPause: true,
 		autoplay: true,
 		items: 1,
-		rtl: true,
 		autoHeight: true,
 		navText: [
-			"<i class='bx bx-chevron-right'></i>",
-			"<i class='bx bx-chevron-left'></i>"
+			"<i class='bx bx-chevron-left'></i>",
+			"<i class='bx bx-chevron-right'></i>"
 		]
 	});
 	$(".home-slides").on("translate.owl.carousel", function(){
@@ -62,11 +61,10 @@
 		autoplayHoverPause: true,
 		autoplay: true,
 		navRewind: false,
-		rtl: true,
 		margin: 30,
 		navText: [
-			"<i class='bx bx-right-arrow-alt'></i>",
-			"<i class='bx bx-left-arrow-alt'></i>"
+			"<i class='bx bx-left-arrow-alt'></i>",
+			"<i class='bx bx-right-arrow-alt'></i>"
 		],
 		responsive: {
 			0: {
@@ -94,7 +92,6 @@
 		loop: true,
 		nav: false,
 		dots: false,
-		rtl: true,
 		autoplayHoverPause: true,
 		autoplay: true,
 		margin: 30,
@@ -126,7 +123,6 @@
 		autoplayHoverPause: true,
 		autoplay: true,
 		navRewind: false,
-		rtl: true,
 		margin: 30,
 		navText: [
 			"<i class='bx bx-left-arrow-alt'></i>",
@@ -153,10 +149,9 @@
 		autoplayHoverPause: true,
 		autoplay: true,
 		margin: 30,
-		rtl: true,
 		navText: [
-			"<i class='bx bx-right-arrow-alt'></i>",
-			"<i class='bx bx-left-arrow-alt'></i>"
+			"<i class='bx bx-left-arrow-alt'></i>",
+			"<i class='bx bx-right-arrow-alt'></i>"
 		],
 		responsive: {
 			0: {
@@ -179,11 +174,10 @@
 		autoplayHoverPause: true,
 		autoplay: true,
 		navRewind: false,
-		rtl: true,
 		margin: 30,
 		navText: [
-			"<i class='bx bx-right-arrow-alt'></i>",
-			"<i class='bx bx-left-arrow-alt'></i>"
+			"<i class='bx bx-left-arrow-alt'></i>",
+			"<i class='bx bx-right-arrow-alt'></i>"
 		],
 		responsive: {
 			0: {
@@ -207,12 +201,11 @@
 		nav: true,
 		dots: false,
 		autoplayHoverPause: true,
-		rtl: true,
 		autoplay: true,
 		items: 1,
 		navText: [
-			"<i class='bx bx-right-arrow-alt'></i>",
-			"<i class='bx bx-left-arrow-alt'></i>"
+			"<i class='bx bx-left-arrow-alt'></i>",
+			"<i class='bx bx-right-arrow-alt'></i>"
 		],
 	});
 
@@ -221,7 +214,6 @@
 		loop: true,
 		nav: false,
 		dots: true,
-		rtl: true,
 		autoplayHoverPause: true,
 		autoplay: true,
 		center: true,
@@ -664,7 +656,6 @@
 		autoplayHoverPause: false,
 		autoplay: true,
 		smartSpeed: 400,
-		rtl: true,
 		mouseDrag: false,
 		autoHeight: true,
 		items: 1,
@@ -682,12 +673,11 @@
 		animateOut: 'fadeOut',
 		autoplayHoverPause: true,
 		autoplay: true,
-		rtl: true,
 		mouseDrag: false,
 		items: 1,
 		navText: [
-			"<i class='bx bx-right-arrow-alt'></i>",
-			"<i class='bx bx-left-arrow-alt'></i>"
+			"<i class='bx bx-left-arrow-alt'></i>",
+			"<i class='bx bx-right-arrow-alt'></i>"
 		],
 	});
 
@@ -751,7 +741,6 @@
 		dots: true,
 		speed: 500,
 		fade: false,
-		rtl: true,
 		slide: 'li',
 		slidesToShow: 1,
 		autoplay: true,

@@ -12,13 +12,13 @@
         .courses-image {
             flex: 0 0 45%;
             max-width: 45%;
-            border-radius: 0 5px 5px 0;
+            border-radius: 5px 0 0 5px;
 
             .image {
                 height: 100%;
                 width: 100%;
                 position: relative;
-                border-radius: 0 5px 5px 0;
+                border-radius: 5px 0 0 5px;
                 background: {
                     position: center center;
                     size: cover;
@@ -48,7 +48,7 @@
                 .courses-tag {
                     position: absolute;
                     top: 15px;
-                    right: 15px;
+                    left: 15px;
                     border-radius: 5px;
                     background-color: var(--whiteColor);
                     transition: var(--transition);
@@ -114,7 +114,7 @@
                         i {
                             color: #f2b827;
                             font-size: 16px;
-                            margin-left: 2px;
+                            margin-right: 2px;
                         }
                     }
                     .rating-total {
@@ -135,7 +135,7 @@
                 ul {
                     list-style-type: none;
                     display: flex;
-                    padding-right: 0;
+                    padding-left: 0;
                     flex-wrap: wrap;
                     align-items: center;
                     margin: {
@@ -171,7 +171,7 @@
                     .courses-price {
                         flex: 0 0 29%;
                         max-width: 29%;
-                        text-align: left;
+                        text-align: right;
                         color: var(--mainColor);
                         font: {
                             size: 18px;

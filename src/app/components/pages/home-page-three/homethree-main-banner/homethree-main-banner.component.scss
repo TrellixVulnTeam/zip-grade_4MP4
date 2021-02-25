@@ -22,7 +22,7 @@
         margin-bottom: 20px;
         text-transform: uppercase;
         position: relative;
-        padding-right: 10px;
+        padding-left: 10px;
         font: {
             size: 14px;
             weight: 700;
@@ -30,7 +30,7 @@
         &::before {
             content: '';
             position: absolute;
-            right: 0;
+            left: 0;
             top: 0;
             height: 100%;
             width: 3px;
@@ -58,7 +58,7 @@
         margin-top: 35px;
 
         .default-btn {
-            margin-left: 25px;
+            margin-right: 25px;
         }
         .video-btn {
             color: var(--whiteColor);
@@ -66,12 +66,12 @@
             display: inline-block;
             position: relative;
             font-size: var(--fontSize);
-            padding-right: 46px;
+            padding-left: 46px;
             top: 2px;
 
             span {
                 position: absolute;
-                right: 0;
+                left: 0;
                 top: -10px;
                 font-size: 40px;
                 z-index: 1;
@@ -86,7 +86,7 @@
                     z-index: -1;
                     width: 40px;
                     height: 40px;
-                    right: 0;
+                    left: 0;
                     transition: var(--transition);
                     border-radius: 50%;
                     border: 1px solid rgba(255, 255, 255, .6);
@@ -108,8 +108,8 @@
         max-width: 380px;
         text-align: center;
         height: 500px;
-        right: 18%;
-        margin-right: -190px;
+        left: 18%;
+        margin-left: -190px;
         z-index: -1;
         border: 18px solid rgba(104, 89, 222, .10);
         box-sizing: border-box;
@@ -132,7 +132,7 @@
         text-align: center;
 
         .sub-title {
-            padding-right: 0;
+            padding-left: 0;
             margin-bottom: 13px;
             font: {
                 weight: 500;
@@ -158,13 +158,13 @@
             margin-top: 25px;
 
             .default-btn {
-                margin-left: 6px;
+                margin-right: 6px;
             }
             .video-btn {
-                margin-right: 6px;
+                margin-left: 6px;
                 top: 0;
                 font-size: 13px;
-                padding-right: 35px;
+                padding-left: 35px;
 
                 span {
                     top: -6px;
@@ -217,8 +217,8 @@
             top: -55px;
             max-width: 340px;
             height: 400px;
-            right: 15%;
-            margin-right: -142px;
+            left: 15%;
+            margin-left: -142px;
         }
     }
 

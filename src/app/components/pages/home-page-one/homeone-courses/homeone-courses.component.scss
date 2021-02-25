@@ -19,7 +19,7 @@
         }
         .courses-tag {
             position: absolute;
-            left: 25px;
+            right: 25px;
             bottom: 0;
             background-color: var(--whiteColor);
             border-radius: 5px 5px 0 0;
@@ -70,7 +70,7 @@
                 i {
                     color: #f2b827;
                     font-size: 16px;
-                    margin-left: 2px;
+                    margin-right: 2px;
                 }
             }
             .rating-total {
@@ -88,7 +88,7 @@
         ul {
             list-style-type: none;
             display: flex;
-            padding-right: 0;
+            padding-left: 0;
             flex-wrap: wrap;
             align-items: center;
             margin: {
@@ -124,7 +124,7 @@
             .courses-price {
                 flex: 0 0 29%;
                 max-width: 29%;
-                text-align: left;
+                text-align: right;
                 color: var(--mainColor);
                 font: {
                     size: 18px;
@@ -288,7 +288,7 @@
         color: #727695;
         transition: var(--transition);
         padding: 0;
-        margin-left: 20px;
+        margin-right: 20px;
         font-weight: 500;
 
         &:hover, &:focus, &.active {
@@ -321,7 +321,7 @@
     .single-courses-box {
         .courses-image {
             .courses-tag {
-                left: 20px;
+                right: 20px;
                 font-size: 13px;
             }
         }

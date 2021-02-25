@@ -11,12 +11,12 @@
         .events-image {
             flex: 0 0 25%;
             max-width: 25%;
-            border-radius: 0 5px 5px 0;
+            border-radius: 5px 0 0 5px;
 
             .image {
                 height: 100%;
                 width: 100%;
-                border-radius: 0 5px 5px 0;
+                border-radius: 5px 0 0 5px;
                 background: {
                     position: center center;
                     size: cover;
@@ -71,7 +71,7 @@
 
                     i {
                         color: var(--mainColor);
-                        margin-left: 2px;
+                        margin-right: 2px;
                         position: relative;
                         top: 1px;
                     }

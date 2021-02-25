@@ -55,9 +55,11 @@ import { EditAddressPageComponent } from './components/pages/edit-address-page/e
 import { EditAccountPageComponent } from './components/pages/edit-account-page/edit-account-page.component';
 import { EditBillingAddressPageComponent } from './components/pages/edit-billing-address-page/edit-billing-address-page.component';
 import { EditShippingAddressPageComponent } from './components/pages/edit-shipping-address-page/edit-shipping-address-page.component';
+import { QuizzesComponent } from './quizzes/quizzes.component';
 
 const routes: Routes = [
     {path: '', component: HomePageOneComponent},
+    {path: 'quizzes', component: QuizzesComponent},
     {path: 'course-portal-online', component: HomePageTwoComponent},
     {path: 'distant-learning', component: HomePageThreeComponent},
     {path: 'modern-teaching', component: HomePageFourComponent},

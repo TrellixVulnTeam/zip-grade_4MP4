@@ -23,8 +23,8 @@
                         weight: 600;
                     };
                     &:nth-child(1) {
-                        text-align: right;
-                        padding-right: 30px;
+                        text-align: left;
+                        padding-left: 30px;
                     }
                 }
             }
@@ -40,8 +40,8 @@
                     weight: 400;
                 };
                 &:nth-child(1) {
-                    text-align: right;
-                    padding-right: 30px;
+                    text-align: left;
+                    padding-left: 30px;
                 }
                 i {
                     width: 20px;
@@ -118,7 +118,7 @@
                         white-space: nowrap;
 
                         &:nth-child(1) {
-                            padding-right: 20px;
+                            padding-left: 20px;
                         }
                     }
                 }
@@ -130,7 +130,7 @@
                     white-space: nowrap;
 
                     &:nth-child(1) {
-                        padding-right: 20px;
+                        padding-left: 20px;
                     }
                 }
             }

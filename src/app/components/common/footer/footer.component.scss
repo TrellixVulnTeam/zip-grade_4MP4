@@ -15,21 +15,21 @@
         margin-bottom: 0;
         list-style-type: none;
         padding: {
-            right: 0;
-            left: 10px;
+            left: 0;
+            right: 10px;
         };
         li {
             margin-bottom: 12px;
             color: #cccccc;
             position: relative;
-            padding-right: 25px;
+            padding-left: 25px;
             line-height: 1.6;
 
             i {
                 color: var(--whiteColor);
                 font-size: 18px;
                 position: absolute;
-                right: 0;
+                left: 0;
                 top: 2px;
             }
             a {
@@ -46,7 +46,7 @@
         }
     }
     .support-link {
-        padding-right: 0;
+        padding-left: 0;
         list-style-type: none;
         margin-bottom: 0;
 
@@ -62,13 +62,13 @@
 
                 &:hover, &:focus {
                     color: var(--mainColor);
-                    padding-right: 7px;
+                    padding-left: 7px;
                 }
             }
         }
     }
     .useful-link {
-        padding-right: 0;
+        padding-left: 0;
         list-style-type: none;
         margin-bottom: 0;
 
@@ -84,13 +84,13 @@
 
                 &:hover, &:focus {
                     color: var(--mainColor);
-                    padding-right: 7px;
+                    padding-left: 7px;
                 }
             }
         }
     }
     .social-link {
-        padding-right: 0;
+        padding-left: 0;
         list-style-type: none;
         margin: {
             top: 25px;
@@ -98,7 +98,7 @@
         };
         li {
             display: inline-block;
-            margin-left: 5.5px;
+            margin-right: 5.5px;
 
             a {
                 width: 30px;
@@ -144,7 +144,7 @@
                 border: 1px solid #848282;
                 border-radius: 5px;
                 height: 43px;
-                padding-right: 10px;
+                padding-left: 10px;
                 color: var(--whiteColor);
                 font-size: 14px;
                 transition: var(--transition);
@@ -153,7 +153,7 @@
                     color: #cccccc;
                 }
                 &:focus {
-                    padding-right: 12px;
+                    padding-left: 12px;
                     border-color: var(--mainColor);
                 }
             }
@@ -175,6 +175,12 @@
                     background-color: var(--optionalColor);
                     color: var(--whiteColor);
                 }
+            }
+            #validator-newsletter {
+                position: absolute;
+                left: 0;
+                bottom: -35px;
+                color: var(--whiteColor);
             }
         }
     }
@@ -216,7 +222,7 @@
 	position: fixed;
 	cursor: pointer;
     bottom: -42px;
-	left: 15px;
+	right: 15px;
 	color: var(--whiteColor);
 	background-color: var(--mainColor);
 	z-index: 4;

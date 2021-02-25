@@ -17,20 +17,20 @@
                 top: 30px;
             };
             ul {
-                padding-right: 0;
+                padding-left: 0;
                 margin-bottom: 0;
                 list-style-type: none;
     
                 li {
                     position: relative;
-                    text-align: right;
+                    text-align: left;
                     display: inline-block;
                     font: {
                         weight: 500;
                         size: 16px;
                     };
                     padding: {
-                        right: 37px;
+                        left: 37px;
                     };
                     margin: {
                         left: 8px;
@@ -40,7 +40,7 @@
                         font-size: 25px;
                         color: #cfcfcf;
                         position: absolute;
-                        right: 0;
+                        left: 0;
                         top: 50%;
                         transform: translateY(-50%);
                     }
@@ -63,7 +63,7 @@
                         }
                     }
                     &:last-child {
-                        padding-left: 0;
+                        padding-right: 0;
                         margin-right: 0;
                         border-right: none;
                     }
@@ -74,7 +74,7 @@
             border-radius: 30px;
         }
         .social-link {
-            padding-right: 0;
+            padding-left: 0;
             list-style-type: none;
             margin: {
                 top: 25px;
@@ -188,20 +188,20 @@
                 margin-bottom: 20px;
             }
             ul {
-                padding-right: 0;
+                padding-left: 0;
                 margin-bottom: 0;
                 list-style-type: none;
 
                 li {
                     position: relative;
-                    text-align: right;
+                    text-align: left;
                     display: block;
                     font: {
                         weight: 500;
                         size: 16px;
                     };
                     padding: {
-                        right: 37px;
+                        left: 37px;
                     };
                     margin: {
                         bottom: 15px;
@@ -213,7 +213,7 @@
                         font-size: 25px;
                         color: #cfcfcf;
                         position: absolute;
-                        right: 0;
+                        left: 0;
                         top: 50%;
                         transform: translateY(-50%);
                     }
@@ -228,7 +228,7 @@
                         };
                     }
                     &:last-child {
-                        padding-left: 0;
+                        padding-right: 0;
                         margin-right: 0;
                         border-right: none;
                     }

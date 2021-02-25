@@ -56,7 +56,7 @@
                     &.product-subtotal {
                         .remove {
                             color: red;
-                            float: left;
+                            float: right;
                             position: relative;
                             top: -1px;
                             font-size: 18px;
@@ -83,10 +83,10 @@
                                 font-size: 22px;
                 
                                 &.minus-btn {
-                                    right: 0;
+                                    left: 0;
                                 }
                                 &.plus-btn {
-                                    left: 0;
+                                    right: 0;
                                 }
                                 &:hover {
                                     color: var(--mainColor);
@@ -140,7 +140,7 @@
         }
         button {
             position: absolute;
-            left: 0;
+            right: 0;
             top: 0;
             height: 50px;
             background: var(--blackColor);
@@ -159,9 +159,6 @@
             }
         }
     }
-    &.text-right {
-        text-align: left !important;
-    }
 }
 .cart-totals {
     background: var(--whiteColor);
@@ -170,7 +167,7 @@
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
     border-radius: 5px;
     margin: {
-        right: auto;
+        left: auto;
         top: 50px;
     };
     h3 {
@@ -181,7 +178,7 @@
         };
     }
     ul {
-        padding-right: 0;
+        padding-left: 0;
         margin: 0 0 25px;
         list-style-type: none;
         
@@ -208,7 +205,7 @@
                 }
             }
             span {
-                float: left;
+                float: right;
                 color: var(--paragraphColor);
                 font: {
                     weight: normal;
@@ -229,7 +226,7 @@
                         font-size: 14px;
                         
                         &:nth-child(1) {
-                            padding-right: 0;
+                            padding-left: 0;
                         }
                     }
                 }
@@ -242,7 +239,7 @@
                             right: 20px;
                         };
                         &:nth-child(1) {
-                            padding-right: 0;
+                            padding-left: 0;
                         }
                     }
                 }
@@ -270,7 +267,7 @@
     
     .cart-buttons {
         .text-right {
-            text-align: left !important;
+            text-align: right !important;
             margin-top: 0;
         }
     }

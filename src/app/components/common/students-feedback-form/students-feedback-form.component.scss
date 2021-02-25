@@ -41,7 +41,7 @@
         padding: 30px;
 
         .form-group {
-            text-align: right;
+            text-align: left;
             position: relative;
             margin-bottom: 30px;
 
@@ -49,7 +49,7 @@
                 border-radius: 0;
                 border: none;
                 border-bottom: 1.3px solid #eeeeee;
-                padding: 0 30px 0 0;
+                padding: 0 0 0 30px;
                 color: var(--blackColor);
                 height: 45px;
                 box-shadow: unset !important;
@@ -83,7 +83,7 @@
                 margin-bottom: 0;
                 position: absolute;
                 display: block;
-                right: 0;
+                left: 0;
                 top: 0;
                 pointer-events: none;
                 width: 100%;
@@ -95,7 +95,7 @@
                     display: block;
                     position: absolute;
                     bottom: 0;
-                    right: 0;
+                    left: 0;
                     width: 0;
                     height: 2px;
                     transition: var(--transition);
@@ -103,7 +103,7 @@
                 }
                 i {
                     position: absolute;
-                    right: 0;
+                    left: 0;
                     transition: var(--transition);
                     top: 10px;
                     font-size: 20px;
@@ -116,7 +116,7 @@
         }
     }
     &::after {
-        left: 100%;
+        right: 100%;
         top: 50%;
         border: solid transparent;
         content: '';
@@ -126,13 +126,13 @@
         pointer-events: none;
         border-width: 20px;
         margin-top: -20px;
-        border-left-color: inherit;
+        border-right-color: inherit;
         z-index: -1;
     }
 }
 .feedback-form-inner {
     background-color: var(--whiteColor);
-    border-radius: 0 5px 5px 5px;
+    border-radius: 5px 0 5px 5px;
     box-shadow: 6px 5px 25px rgba(0, 0, 0, 0.08);
 
     .feedback-form-image {
@@ -176,10 +176,10 @@
         }
         form {
             text-align: center;
-            padding: 30px 0 30px 30px;
+            padding: 30px 30px 30px 0;
     
             .form-group {
-                text-align: right;
+                text-align: left;
             }
             .form-control {
                 &::placeholder {

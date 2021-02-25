@@ -24,7 +24,7 @@
             text-decoration: line-through;
             color: #828893;
             font-weight: normal;
-            margin-right: 5px;
+            margin-left: 5px;
         }
     }
     .product-review {
@@ -32,13 +32,13 @@
 
         .rating {
             display: inline-block;
-            padding-left: 5px;
+            padding-right: 5px;
             font-size: 18px;
 
             i {
                 color: #ffba0a;
                 display: inline-block;
-                margin-left: 2px;
+                margin-right: 2px;
             }
         }
         .rating-count {
@@ -97,7 +97,7 @@
         .input-counter {
             max-width: 130px;
             min-width: 130px;
-            margin-left: 10px;
+            margin-right: 10px;
             text-align: center;
             display: inline-block;
             position: relative;    
@@ -115,10 +115,10 @@
                 font-size: 25px;
 
                 &.minus-btn {
-                    right: 0;
+                    left: 0;
                 }
                 &.plus-btn {
-                    left: 0;
+                    right: 0;
                 }
                 &:hover {
                     color: var(--mainColor);
@@ -181,12 +181,12 @@
         list-style-type: none;
         margin-bottom: -1px;
         padding: {
-            right: 0;
+            left: 0;
         };
         li {
             display: inline-block;
             line-height: initial;
-            margin-left: 10px;
+            margin-right: 10px;
 
             a {
                 display: inline-block;
@@ -196,8 +196,8 @@
                 padding: {
                     top: 13px;
                     bottom: 13px;
-                    left: 30px;
-                    right: 48px;
+                    right: 30px;
+                    left: 48px;
                 };
                 font: {
                     weight: 500;
@@ -207,7 +207,7 @@
                     position: absolute;
                     top: 50%;
                     transform: translateY(-50%);
-                    right: 30px;
+                    left: 30px;
                     width: 12px;
                     height: 12px;
                     border: 1px solid var(--blackColor);
@@ -257,7 +257,7 @@
                 }
             }
             &:last-child {
-                margin-left: 0;
+                margin-right: 0;
             }
         }
     }
@@ -276,10 +276,10 @@
                     }
                 }
                 .additional-information {
-                    padding-right: 0;
+                    padding-left: 0;
                     margin-bottom: 0;
                     list-style-type: none;
-                    text-align: right;
+                    text-align: left;
         
                     li {
                         border: 1px solid #eeeeee;
@@ -320,20 +320,20 @@
                             i {
                                 color: #ebebeb;
                                 font-size: 18px;
-                                margin-left: 2px;
+                                margin-right: 2px;
                             }
                         }
                         p {
                             margin-bottom: 0;
                             display: inline-block;
-                            padding-right: 5px;
+                            padding-left: 5px;
                             line-height: initial;
                             position: relative;
                             top: -2px;
                         }
                         .default-btn {
                             position: absolute;
-                            left: 0;
+                            right: 0;
                             bottom: 0;
                         }
                     }
@@ -343,7 +343,7 @@
                         .review-item {
                             margin-top: 30px;
                             position: relative;
-                            padding-left: 200px;
+                            padding-right: 200px;
                             border-top: 1px dashed #eeeeee;
                             padding-top: 30px;
 
@@ -354,7 +354,7 @@
                                 i {
                                     font-size: 18px;
                                     color: #ebebeb;
-                                    margin-left: -1px;
+                                    margin-right: -1px;
                                 }
                             }
                             h3 {
@@ -378,7 +378,7 @@
                             }
                             .review-report-link {
                                 position: absolute;
-                                left: 0;
+                                right: 0;
                                 color: var(--paragraphColor);
                                 top: 40px;
                                 text-decoration: underline;
@@ -407,7 +407,7 @@
                                     width: 100%;
                                     background-color: #f4f4f4;
                                     border: none;
-                                    padding: 0 15px 0 0;
+                                    padding: 0 0 0 15px;
                                     height: 50px;
                                     outline: 0;
                                     border-radius: 3px;
@@ -465,7 +465,7 @@
         .tabs {
             li {
                 display: block;
-                margin-left: 0;
+                margin-right: 0;
 
                 a {
                     display: block;
@@ -500,7 +500,7 @@
                             .review-item {
                                 margin-top: 30px;
                                 position: relative;
-                                padding-left: 0;
+                                padding-right: 0;
                                 border-top: 1px dashed #eeeeee;
                                 padding-top: 30px;
                             }

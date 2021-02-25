@@ -104,6 +104,7 @@ import { EditAddressPageComponent } from './components/pages/edit-address-page/e
 import { EditAccountPageComponent } from './components/pages/edit-account-page/edit-account-page.component';
 import { EditBillingAddressPageComponent } from './components/pages/edit-billing-address-page/edit-billing-address-page.component';
 import { EditShippingAddressPageComponent } from './components/pages/edit-shipping-address-page/edit-shipping-address-page.component';
+import { QuizzesComponent } from './quizzes/quizzes.component';
 
 @NgModule({
   declarations: [
@@ -208,7 +209,8 @@ import { EditShippingAddressPageComponent } from './components/pages/edit-shippi
     EditAddressPageComponent,
     EditAccountPageComponent,
     EditBillingAddressPageComponent,
-    EditShippingAddressPageComponent
+    EditShippingAddressPageComponent,
+    QuizzesComponent
   ],
   imports: [
     BrowserModule,

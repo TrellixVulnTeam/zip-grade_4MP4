@@ -78,7 +78,7 @@
                 margin-bottom: 0;
                 position: absolute;
                 display: block;
-                right: 0;
+                left: 0;
                 top: 0;
                 pointer-events: none;
                 width: 100%;
@@ -87,7 +87,7 @@
 
                 i {
                     position: absolute;
-                    right: 0;
+                    left: 0;
                     transition: var(--transition);
                     top: 9px;
                     font: {
@@ -99,7 +99,7 @@
                     display: block;
                     position: absolute;
                     bottom: 0;
-                    right: 0;
+                    left: 0;
                     width: 0;
                     height: 2px;
                     transition: var(--transition);
@@ -110,7 +110,7 @@
                 border-radius: 0;
                 border: none;
                 border-bottom: 2px solid #eeeeee;
-                padding: 0 32px 0 0;
+                padding: 0 0 0 32px;
                 color: var(--blackColor);
                 height: 45px;
                 display: block;
@@ -126,7 +126,7 @@
                     transition: var(--transition);
                 }
                 &:focus {
-                    padding-right: 2px;
+                    padding-left: 2px;
                     
                     &::placeholder {
                         color: transparent;

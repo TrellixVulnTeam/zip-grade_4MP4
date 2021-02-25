@@ -5,7 +5,7 @@
 .about-image {
     position: relative;
     padding: {
-        left: 100px;
+        right: 100px;
         bottom: 50px;
     };
     img {
@@ -13,14 +13,14 @@
 
         &:nth-child(2) {
             position: absolute;
-            left: 10px;
+            right: 10px;
             bottom: 0;
             z-index: 1;
         }
     }
 }
 .about-content {
-    padding-right: 15px;
+    padding-left: 15px;
 
     .sub-title {
         text-transform: uppercase;
@@ -52,13 +52,13 @@
                 weight: 600;
             };
             padding: {
-                right: 47px;
+                left: 47px;
                 top: 7px;
             };
         }
         i {
             position: absolute;
-            right: 0;
+            left: 0;
             top: 0;
             width: 35px;
             height: 35px;
@@ -79,7 +79,7 @@
     }
     &.left-content {
         max-width: 540px;
-        margin-right: auto;
+        margin-left: auto;
         padding: {
             left: 0;
             right: 15px;
@@ -88,7 +88,7 @@
 }
 .about-right-image {
     position: relative;
-    text-align: left;
+    text-align: right;
     padding: {
         left: 100px;
         bottom: 60px;
@@ -96,13 +96,13 @@
     img {
         &:nth-child(2) {
             position: absolute;
-            right: 0;
+            left: 0;
             bottom: 0;
         }
     }
     .text-box {
         position: absolute;
-        right: 220px;
+        left: 220px;
         top: 60px;
         z-index: 1;
         width: 150px;
@@ -114,9 +114,9 @@
 
         .inner {
             position: absolute;
-            right: 0;
-            top: 55%;
             left: 0;
+            top: 55%;
+            right: 0;
             transform: translateY(-55%);
             text-transform: uppercase;
             color: var(--paragraphColor);
@@ -170,7 +170,7 @@
         &::before {
             content: '';
             position: absolute;
-            right: 0;
+            left: 0;
             bottom: -1px;
             width: 50px;
             background-color: var(--mainColor);
@@ -178,7 +178,7 @@
         }
     }
     .features-list {
-        padding-right: 0;
+        padding-left: 0;
         list-style-type: none;
         margin-top: 15px;
         margin-bottom: 0;
@@ -202,7 +202,7 @@
                 transition: var(--transition);
                 text-align: center;
                 position: absolute;
-                right: 0;
+                left: 0;
                 top: 50%;
                 transform: translateY(-50%);
             }
@@ -225,7 +225,7 @@
         text-align: center;
         margin-bottom: 30px;
         padding: {
-            left: 0;
+            right: 0;
             bottom: 0;
         };
         img {
@@ -233,13 +233,13 @@
 
             &:nth-child(2) {
                 position: relative;
-                left: 0;
+                right: 0;
                 margin-top: 30px;
             }
         }
     }
     .about-content {
-        padding-right: 0;
+        padding-left: 0;
         text-align: center;
 
         .sub-title {
@@ -271,7 +271,7 @@
                 font-size: 16px;
                 padding: {
                     top: 0;
-                    right: 0;
+                    left: 0;
                 };
             }
         }
@@ -280,14 +280,14 @@
         }
         &.left-content {
             max-width: 100%;
-            padding-left: 0;
+            padding-right: 0;
         }
     }
     .about-right-image {
         margin-top: 30px;
         text-align: center;
         padding: {
-            right: 0;
+            left: 0;
             bottom: 0;
         };
         img {
@@ -299,12 +299,12 @@
             }
         }
         .text-box {
-            right: auto;
+            left: auto;
             top: 30%;
             width: 140px;
             height: 140px;
             transform: translateY(-30%);
-            left: 0;
+            right: 0;
 
             &::before {
                 animation: unset !important;
@@ -339,7 +339,7 @@
     }
     .about-image {
         padding: {
-            left: 100px;
+            right: 100px;
             bottom: 50px;
         };
         img {
@@ -347,7 +347,7 @@
 
             &:nth-child(2) {
                 position: absolute;
-                left: 0;
+                right: 0;
                 margin-top: 0;
             }
         }
@@ -365,7 +365,7 @@
         margin-bottom: 30px;
     }
     .about-content {
-        padding-right: 0;
+        padding-left: 0;
         text-align: center;
         max-width: 575px;
         margin: {
@@ -376,13 +376,13 @@
             h5 {
                 padding: {
                     top: 0;
-                    right: 0;
+                    left: 0;
                 };
                 i {
                     display: block;
                     position: relative;
                     top: 0;
-                    right: 0;
+                    left: 0;
                     margin: {
                         left: auto;
                         right: auto;
@@ -393,7 +393,7 @@
         }
         &.left-content {
             max-width: 100%;
-            padding-left: 0;
+            padding-right: 0;
         }
     }
     .about-right-image {

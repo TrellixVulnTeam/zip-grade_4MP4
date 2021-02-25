@@ -7,7 +7,7 @@
         text-transform: uppercase;
         margin-bottom: 13px;
         position: relative;
-        padding-right: 23px;
+        padding-left: 23px;
         font: {
             weight: 600;
             size: 14px;
@@ -15,7 +15,7 @@
         i {
             font-size: 20px;
             position: absolute;
-            right: 0;
+            left: 0;
             top: 0;
         }
         &:hover, &:focus {
@@ -33,28 +33,28 @@
         margin-top: 20px;
 
         ul {
-            padding-right: 0;
+            padding-left: 0;
             margin-bottom: 0;
             list-style-type: none;
 
             li {
-                margin-left: 20px;
+                margin-right: 20px;
                 position: relative;
                 display: inline-block;
-                border-left: 1px solid #eeeeee;
+                border-right: 1px solid #eeeeee;
                 font: {
                     weight: 500;
                     size: 16px;
                 };
                 padding: {
-                    left: 20px;
-                    right: 37px;
+                    right: 20px;
+                    left: 37px;
                 };
                 i {
                     font-size: 25px;
                     color: #cfcfcf;
                     position: absolute;
-                    right: 0;
+                    left: 0;
                     top: 50%;
                     transform: translateY(-50%);
                 }
@@ -77,9 +77,9 @@
                     }
                 }
                 &:last-child {
-                    padding-left: 0;
-                    margin-left: 0;
-                    border-left: none;
+                    padding-right: 0;
+                    margin-right: 0;
+                    border-right: none;
                 }
             }
         }
@@ -135,11 +135,11 @@
                     font-size: 14px;
                     margin: {
                         top: 15px;
-                        left: 15px;
+                        right: 15px;
                     };
                     padding: {
-                        left: 15px;
-                        right: 0;
+                        right: 15px;
+                        left: 0;
                     };
                     span {
                         font-size: 13px;

@@ -13,8 +13,6 @@
 body {
     background-color: var(--whiteColor);
     padding: 0;
-    direction: rtl;
-    text-align: right;
     margin: 0;
     font: {
         family: var(--fontFamily1);
@@ -105,7 +103,7 @@ img {
 .default-btn {
     transition: var(--transition);
     display: inline-block;
-    padding: 13px 55px 12px 25px;
+    padding: 13px 25px 12px 55px;
     position: relative;
     background-color: var(--mainColor);
     color: var(--whiteColor);
@@ -136,16 +134,16 @@ img {
     }
     .icon-arrow {
         &.before {
-            right: 20px;
+            left: 20px;
             position: absolute;
-            transform-origin: right center;
+            transform-origin: left center;
         }
         &.after {
             opacity: 0;
             position: absolute;
-            left: 20px;
-            transform: translateX(-75%) scaleX(0.1);
-            transform-origin: left center;
+            right: 20px;
+            transform: translateX(75%) scaleX(0.1);
+            transform-origin: right center;
         }
     }
     &:hover, &:focus {
@@ -154,12 +152,12 @@ img {
         border-color: var(--optionalColor);
 
         .label {
-            transform: translateX(32px);
+            transform: translateX(-32px);
         }
         .icon-arrow {
             &.before {
                 opacity: 0;
-                transform: translateX(75%) scaleX(0.1);
+                transform: translateX(-75%) scaleX(0.1);
             }
             &.after {
                 opacity: 1;
@@ -201,12 +199,12 @@ img {
     }
     .default-btn {
         position: absolute;
-        left: 0;
+        right: 0;
         top: 50%;
         transform: translateY(-50%);
         z-index: 1;
     }
-    &.text-right {
+    &.text-left {
         h2 {
             max-width: 620px;
             margin-bottom: 0;
@@ -225,7 +223,7 @@ img {
 /*form-control*/
 .form-control {
     height: 48px;
-    padding: 0 12px 0 0;
+    padding: 0 0 0 12px;
     line-height: initial;
     color: var(--blackColor);
     background-color: var(--whiteColor);
@@ -265,7 +263,7 @@ textarea.form-control {
                 height: 50px;
                 line-height: 56px;
                 position: absolute;
-                right: -84px;
+                left: -84px;
                 transition: var(--transition);
                 border: none;
                 top: 50%;
@@ -274,8 +272,8 @@ textarea.form-control {
                 border-radius: 50%;
 
                 &.owl-next {
-                    right: auto;
-                    left: -84px;
+                    left: auto;
+                    right: -84px;
                 }
                 &:hover, &:focus {
                     background-color: var(--mainColor);
@@ -308,7 +306,7 @@ textarea.form-control {
                 height: 50px;
                 line-height: 51px;
                 position: absolute;
-                right: -50px;
+                left: -50px;
                 transition: var(--transition);
                 top: 50%;
                 transform: translateY(-50%);
@@ -321,8 +319,8 @@ textarea.form-control {
                     width: 2px;
                 };
                 &.owl-next {
-                    right: auto;
-                    left: -50px;
+                    left: auto;
+                    right: -50px;
                 }
                 &:hover, &:focus {
                     background-color: var(--mainColor);
@@ -345,13 +343,13 @@ textarea.form-control {
         &:hover, &:focus {
             .owl-nav {    
                 [class*=owl-] {
-                    right: -70px;
+                    left: -70px;
                     opacity: 1;
                     visibility: visible;
 
                     &.owl-next {
-                        right: auto;
-                        left: -70px;
+                        left: auto;
+                        right: -70px;
                     }
                 }
             }
@@ -468,7 +466,7 @@ textarea.form-control {
                 height: 50px;
                 line-height: 51px;
                 position: absolute;
-                right: -50px;
+                left: -50px;
                 transition: var(--transition);
                 top: 50%;
                 transform: translateY(-50%);
@@ -481,8 +479,8 @@ textarea.form-control {
                     width: 2px;
                 };
                 &.owl-next {
-                    right: auto;
-                    left: -50px;
+                    left: auto;
+                    right: -50px;
                 }
                 &:hover, &:focus {
                     background-color: var(--mainColor);
@@ -505,13 +503,13 @@ textarea.form-control {
         &:hover, &:focus {
             .owl-nav {    
                 [class*=owl-] {
-                    right: -70px;
+                    left: -70px;
                     opacity: 1;
                     visibility: visible;
 
                     &.owl-next {
-                        right: auto;
-                        left: -70px;
+                        left: auto;
+                        right: -70px;
                     }
                 }
             }
@@ -546,7 +544,7 @@ textarea.form-control {
                 height: 50px;
                 line-height: 51px;
                 position: absolute;
-                right: 50px;
+                left: 50px;
                 transition: var(--transition);
                 top: 50%;
                 transform: translateY(-50%);
@@ -557,8 +555,8 @@ textarea.form-control {
                     width: 2px;
                 };
                 &.owl-next {
-                    right: auto;
-                    left: 50px;
+                    left: auto;
+                    right: 50px;
                 }
                 &:hover, &:focus {
                     background-color: var(--mainColor);
@@ -581,11 +579,11 @@ textarea.form-control {
         &:hover, &:focus {
             .owl-nav {    
                 [class*=owl-] {
-                    right: 70px;
+                    left: 70px;
 
                     &.owl-next {
-                        right: auto;
-                        left: 70px;
+                        left: auto;
+                        right: 70px;
                     }
                 }
             }
@@ -607,7 +605,7 @@ textarea.form-control {
                 height: 50px;
                 line-height: 51px;
                 position: absolute;
-                right: -50px;
+                left: -50px;
                 transition: var(--transition);
                 top: 50%;
                 transform: translateY(-50%);
@@ -620,8 +618,8 @@ textarea.form-control {
                     width: 2px;
                 };
                 &.owl-next {
-                    right: auto;
-                    left: -50px;
+                    left: auto;
+                    right: -50px;
                 }
                 &:hover, &:focus {
                     background-color: var(--mainColor);
@@ -644,13 +642,13 @@ textarea.form-control {
         &:hover, &:focus {
             .owl-nav {    
                 [class*=owl-] {
-                    right: -70px;
+                    left: -70px;
                     opacity: 1;
                     visibility: visible;
 
                     &.owl-next {
-                        right: auto;
-                        left: -70px;
+                        left: auto;
+                        right: -70px;
                     }
                 }
             }
@@ -667,7 +665,7 @@ textarea.form-control {
 
             [class*=owl-] {
                 position: absolute;
-                right: 20px;
+                left: 20px;
                 top: 50%;
                 transform: translateY(-50%);
                 color: var(--blackColor);
@@ -688,8 +686,8 @@ textarea.form-control {
                     transform: translateY(-50%);
                 }
                 &.owl-next {
-                    right: auto;
-                    left: 20px;
+                    left: auto;
+                    right: 20px;
                 }
                 &:hover {
                     background-color: var(--mainColor);
@@ -964,10 +962,10 @@ textarea.form-control {
     text-align: center;
 
     .col-lg-3 {
-        border-left: 1px solid rgba(255, 255, 255, .30);
+        border-right: 1px solid rgba(255, 255, 255, .30);
 
         &:last-child {
-            border-left: 0;
+            border-right: 0;
         }
     }
 }
@@ -1348,12 +1346,8 @@ textarea.form-control {
             };
         }
     }
-    .offset-lg-4 {
-        margin-left: 0%;
-        margin-right: 33.3333333333%;
-    }
     .topbar-ordering-and-search {
-        text-align: left;
+        text-align: right;
 
         .topbar-ordering {
             .nice-select {
@@ -1363,14 +1357,12 @@ textarea.form-control {
                 line-height: 45px;
                 color: var(--paragraphColor);
                 font-size: var(--fontSize);
-                text-align: right !important;
                 padding: {
                     left: 0;
                     right: 0;
                 };
                 &::after {
-                    right: auto;
-                    left: 2px;
+                    right: 2px;
                     width: 7px;
                     height: 7px;
                     border-color: var(--paragraphColor);
@@ -1380,7 +1372,6 @@ textarea.form-control {
                     background-color: var(--whiteColor);
                     border-radius: 0;
                     box-shadow: unset;
-                    text-align: right !important;
                     width: 100%;
                     margin: {
                         top: 0;
@@ -1393,7 +1384,6 @@ textarea.form-control {
                     .option {
                         font-size: 14px;
                         transition: var(--transition);
-                        text-align: right !important;
                         padding: {
                             left: 15px;
                             right: 15px;
@@ -1417,7 +1407,7 @@ textarea.form-control {
                     display: block;
                     margin-bottom: 0;
                     position: absolute;
-                    right: 20px;
+                    left: 20px;
                     top: 14.2px;
                     font-size: 18px;
                     color: var(--mainColor);
@@ -1429,7 +1419,7 @@ textarea.form-control {
                     display: block;
                     width: 100%;
                     border-radius: 30px;
-                    padding: 3px 48px 0 15px;
+                    padding: 3px 15px 0 48px;
                     border: none;
                     transition: var(--transition);
                     font: {
@@ -1458,7 +1448,6 @@ textarea.form-control {
                 border-radius: 3px;
                 height: 48px;
                 border: solid 1px #e6e9fc;
-                text-align: right !important;
                 line-height: 48px;
                 color: var(--blackColor);
                 padding: {
@@ -1479,7 +1468,6 @@ textarea.form-control {
                     background-color: var(--whiteColor);
                     border-radius: 0;
                     box-shadow: unset;
-                    text-align: right !important;
                     width: 100%;
                     margin: {
                         top: 0;
@@ -1492,7 +1480,6 @@ textarea.form-control {
                     .option {
                         font-size: 14px;
                         transition: var(--transition);
-                        text-align: right !important;
                         padding: {
                             left: 15px;
                             right: 15px;
@@ -1507,8 +1494,7 @@ textarea.form-control {
                     }
                 }
                 &::after {
-                    right: auto;
-                    left: 15px;
+                    right: 15px;
                 }
             }
         }
@@ -1619,13 +1605,13 @@ textarea.form-control {
 }
 .page-title-content {
     ul {
-        padding-right: 0;
+        padding-left: 0;
         margin-bottom: 12px;
         list-style-type: none;
 
         li {
             display: inline-block;
-            margin-left: 30px;
+            margin-right: 30px;
             position: relative;
             color: var(--whiteColor);
 
@@ -1643,7 +1629,7 @@ textarea.form-control {
                 content: "\e9fa";
                 color: var(--whiteColor);
                 position: absolute;
-                left: -25px;
+                right: -25px;
                 top: -4px;
                 opacity: .85;
                 font: {
@@ -1655,7 +1641,7 @@ textarea.form-control {
                 };
             }
             &:last-child {
-                margin-left: 0;
+                margin-right: 0;
 
                 &::before {
                     display: none;
@@ -1684,8 +1670,8 @@ textarea.form-control {
         .widget-title {
             margin-bottom: 25px;
             position: relative;
-            padding-right: 10px;
-            border-right: 3px dashed #dfdfdf;
+            padding-left: 10px;
+            border-left: 3px dashed #dfdfdf;
             font: {
                 size: 19px;
                 weight: 600;
@@ -1693,7 +1679,7 @@ textarea.form-control {
             &::before {
                 content: '';
                 position: absolute;
-                right: -3px;
+                left: -3px;
                 top: 0;
                 width: 3px;
                 height: 6px;
@@ -1702,7 +1688,7 @@ textarea.form-control {
             &::after {
                 content: '';
                 position: absolute;
-                right: -3px;
+                left: -3px;
                 top: 16px;
                 width: 3px;
                 height: 6px;
@@ -1728,7 +1714,7 @@ textarea.form-control {
                 display: block;
                 width: 100%;
                 border-radius: 5px;
-                padding: 3px 18px 0 0;
+                padding: 3px 0 0 18px;
                 border: none;
                 transition: var(--transition);
                 font: {
@@ -1752,7 +1738,7 @@ textarea.form-control {
                 height: 45px;
                 width: 45px;
                 position: absolute;
-                left: 5px;
+                right: 5px;
                 transition: var(--transition);
                 border-radius: 5px;
                 top: 5px;
@@ -1777,13 +1763,13 @@ textarea.form-control {
                 margin-bottom: 0;
             }
             .thumb {
-                float: right;
+                float: left;
                 height: 80px;
                 overflow: hidden;
                 display: block;
                 position: relative;
                 width: 80px;
-                margin-left: 15px;
+                margin-right: 15px;
                 z-index: 1;
 
                 .fullimage {
@@ -1869,7 +1855,7 @@ textarea.form-control {
     }
     .widget_categories {
         ul {
-            padding-right: 0;
+            padding-left: 0;
             margin-bottom: 0;
             list-style-type: none;
 
@@ -1878,7 +1864,7 @@ textarea.form-control {
                 margin-bottom: 12px;
                 overflow: hidden;
                 color: var(--blackColor);
-                padding-right: 18px;
+                padding-left: 18px;
                 font: {
                     weight: 600;
                     size: 14px;
@@ -1892,7 +1878,7 @@ textarea.form-control {
                     width: 8px;
                     content: '';
                     border-radius: 50%;
-                    right: 0;
+                    left: 0;
                     top: 7px;
                     position: absolute;
                 }
@@ -1944,7 +1930,7 @@ textarea.form-control {
     }
     .widget_instagram {
         ul {
-            padding-right: 0;
+            padding-left: 0;
             list-style-type: none;
             flex-wrap: wrap;
             display: flex;
@@ -2069,7 +2055,7 @@ textarea.form-control {
     }
     .widget_events_details {
         ul {
-            padding-right: 0;
+            padding-left: 0;
             margin-bottom: 0;
             list-style-type: none;
 
@@ -2158,7 +2144,7 @@ textarea.form-control {
     flex: 0 0 50%;
     max-width: 50%;
     padding: {
-        left: 15px;
+        right: 15px;
     };
     a {
         display: flex;
@@ -2187,7 +2173,7 @@ textarea.form-control {
         border-radius: 5px;
         overflow: hidden;
         vertical-align: top;
-        margin-left: 20px;
+        margin-right: 20px;
         position: relative;
         transition: var(--transition);
 
@@ -2253,9 +2239,9 @@ textarea.form-control {
 .next-link-wrapper {
     flex: 0 0 50%;
     max-width: 50%;
-    text-align: left;
+    text-align: right;
     padding: {
-        right: 15px;
+        left: 15px;
     };
     a {
         display: flex;
@@ -2284,7 +2270,7 @@ textarea.form-control {
         border-radius: 5px;
         overflow: hidden;
         vertical-align: top;
-        margin-right: 20px;
+        margin-left: 20px;
         position: relative;
         transition: var(--transition);
 
@@ -2376,7 +2362,7 @@ blockquote, .blockquote {
     &::before {
         color: #efefef;
         position: absolute;
-        right: 50px;
+        left: 50px;
         top: -50px;
         z-index: -1;
         content: "\ed67";
@@ -2391,7 +2377,7 @@ blockquote, .blockquote {
     &::after {
         content: '';
         position: absolute;
-        right: 0;
+        left: 0;
         top: 0;
         bottom: 0;
         width: 3px;
@@ -2448,7 +2434,7 @@ blockquote, .blockquote {
         p {
             max-width: 100%;
         }
-        &.text-right {
+        &.text-left {
             text-align: center !important;
 
             h2 {
@@ -2460,7 +2446,7 @@ blockquote, .blockquote {
         }
     }
     .default-btn {
-        padding: 12px 50px 11px 20px;
+        padding: 12px 20px 11px 50px;
         font-size: 13px;
 
         .icon-arrow {
@@ -2477,11 +2463,11 @@ blockquote, .blockquote {
                     width: 35px;
                     height: 35px;
                     line-height: 41px;
-                    right: -35px;
+                    left: -35px;
 
                     &.owl-next {
-                        right: auto;
-                        left: -35px;
+                        left: auto;
+                        right: -35px;
                     }
                 }
             }
@@ -2493,7 +2479,7 @@ blockquote, .blockquote {
         padding: 25px 20px 0;
 
         .col-lg-3 {
-            border-left: none;
+            border-right: none;
         }
     }
 
@@ -2515,7 +2501,7 @@ blockquote, .blockquote {
                     height: 40px;
                     line-height: 42px;
                     position: relative;
-                    right: 0 !important;
+                    left: 0 !important;
                     top: 0;
                     transform: unset;
                     opacity: 1;
@@ -2525,8 +2511,8 @@ blockquote, .blockquote {
                         right: 5px;
                     };
                     &.owl-next {
-                        right: auto !important;
-                        left: 0 !important;
+                        left: auto !important;
+                        right: 0 !important;
                     }
                 }
             }
@@ -2544,7 +2530,7 @@ blockquote, .blockquote {
                     height: 40px;
                     line-height: 42px;
                     position: relative;
-                    right: 0 !important;
+                    left: 0 !important;
                     top: 0;
                     transform: unset;
                     opacity: 1;
@@ -2554,8 +2540,8 @@ blockquote, .blockquote {
                         right: 5px;
                     };
                     &.owl-next {
-                        right: auto !important;
-                        left: 0 !important;
+                        left: auto !important;
+                        right: 0 !important;
                     }
                 }
             }
@@ -2573,7 +2559,7 @@ blockquote, .blockquote {
                     height: 40px;
                     line-height: 42px;
                     position: relative;
-                    right: 0 !important;
+                    left: 0 !important;
                     top: 0;
                     transform: unset;
                     opacity: 1;
@@ -2583,8 +2569,8 @@ blockquote, .blockquote {
                         right: 5px;
                     };
                     &.owl-next {
-                        right: auto !important;
-                        left: 0 !important;
+                        left: auto !important;
+                        right: 0 !important;
                     }
                 }
             }
@@ -2595,7 +2581,7 @@ blockquote, .blockquote {
         &.owl-theme {
             .owl-nav {
                 [class*=owl-] {
-                    right: 10px;
+                    left: 10px;
                     font-size: 27px;
                     width: 35px;
                     height: 35px;
@@ -2605,8 +2591,8 @@ blockquote, .blockquote {
                         transform: translateY(-55%);
                     }
                     &.owl-next {
-                        right: auto;
-                        left: 10px;
+                        left: auto;
+                        right: 10px;
                     }
                 }
             }
@@ -2624,7 +2610,7 @@ blockquote, .blockquote {
                     height: 40px;
                     line-height: 42px;
                     position: relative;
-                    right: 0 !important;
+                    left: 0 !important;
                     top: 0;
                     transform: unset;
                     opacity: 1;
@@ -2634,8 +2620,8 @@ blockquote, .blockquote {
                         right: 5px;
                     };
                     &.owl-next {
-                        right: auto !important;
-                        left: 0 !important;
+                        left: auto !important;
+                        right: 0 !important;
                     }
                 }
             }
@@ -2704,9 +2690,6 @@ blockquote, .blockquote {
                 bottom: 7px;
             };
         }
-        .offset-lg-4 {
-            margin-right: 0%;
-        }
     }
 
     .page-title-area {
@@ -2743,7 +2726,7 @@ blockquote, .blockquote {
     .prev-link-wrapper {
         flex: 0 0 100%;
         max-width: 100%;
-        padding-left: 0;
+        padding-right: 0;
 
         .prev-title {
             font-size: 15px;
@@ -2755,7 +2738,7 @@ blockquote, .blockquote {
     .next-link-wrapper {
         flex: 0 0 100%;
         max-width: 100%;
-        padding-right: 0;
+        padding-left: 0;
         margin-top: 30px;
 
         .next-title {
@@ -2865,7 +2848,7 @@ blockquote, .blockquote {
     .section-title {
         margin-bottom: 50px;
 
-        &.text-right {
+        &.text-left {
             text-align: center !important;
 
             h2 {
@@ -2892,7 +2875,7 @@ blockquote, .blockquote {
                     height: 40px;
                     line-height: 42px;
                     position: relative;
-                    right: 0 !important;
+                    left: 0 !important;
                     top: 0;
                     transform: unset;
                     opacity: 1;
@@ -2902,8 +2885,8 @@ blockquote, .blockquote {
                         right: 5px;
                     };
                     &.owl-next {
-                        right: auto !important;
-                        left: 0 !important;
+                        left: auto !important;
+                        right: 0 !important;
                     }
                 }
             }
@@ -2955,7 +2938,7 @@ blockquote, .blockquote {
                     height: 40px;
                     line-height: 42px;
                     position: relative;
-                    right: 0 !important;
+                    left: 0 !important;
                     top: 0;
                     transform: unset;
                     opacity: 1;
@@ -2965,8 +2948,8 @@ blockquote, .blockquote {
                         right: 5px;
                     };
                     &.owl-next {
-                        right: auto !important;
-                        left: 0 !important;
+                        left: auto !important;
+                        right: 0 !important;
                     }
                 }
             }
@@ -2981,7 +2964,7 @@ blockquote, .blockquote {
         &.owl-theme {
             .owl-nav {
                 [class*=owl-] {
-                    right: 0 !important;
+                    left: 0 !important;
                     top: auto;
                     transform: unset;
                     bottom: 40px;
@@ -2989,17 +2972,11 @@ blockquote, .blockquote {
                     visibility: visible;
 
                     &.owl-next {
-                        right: 75px !important;
-                        left: auto;
+                        left: 75px !important;
+                        right: auto;
                     }
                 }
             }
-        }
-    }
-
-    .courses-topbar {
-        .offset-lg-4 {
-            margin-right: 0%;
         }
     }
 
@@ -3014,7 +2991,7 @@ blockquote, .blockquote {
                     height: 40px;
                     line-height: 42px;
                     position: relative;
-                    right: 0 !important;
+                    left: 0 !important;
                     top: 0;
                     transform: unset;
                     opacity: 1;
@@ -3024,8 +3001,8 @@ blockquote, .blockquote {
                         right: 5px;
                     };
                     &.owl-next {
-                        right: auto !important;
-                        left: 0 !important;
+                        left: auto !important;
+                        right: 0 !important;
                     }
                 }
             }
@@ -3066,7 +3043,7 @@ blockquote, .blockquote {
 
                 [class*=owl-] {
                     position: relative;
-                    right: 0 !important;
+                    left: 0 !important;
                     top: 0;
                     transform: unset;
                     opacity: 1;
@@ -3076,8 +3053,8 @@ blockquote, .blockquote {
                         right: 5px;
                     };
                     &.owl-next {
-                        right: 0 !important;
                         left: 0 !important;
+                        right: 0 !important;
                     }
                 }
             }
@@ -3093,7 +3070,7 @@ blockquote, .blockquote {
                 };
                 [class*=owl-] {
                     position: relative;
-                    right: 0 !important;
+                    left: 0 !important;
                     top: 0;
                     transform: unset;
                     opacity: 1;
@@ -3103,8 +3080,8 @@ blockquote, .blockquote {
                         right: 5px;
                     };
                     &.owl-next {
-                        right: 0 !important;
                         left: 0 !important;
+                        right: 0 !important;
                     }
                 }
             }
@@ -3120,7 +3097,7 @@ blockquote, .blockquote {
                 };
                 [class*=owl-] {
                     position: relative;
-                    right: 0 !important;
+                    left: 0 !important;
                     top: 0;
                     transform: unset;
                     opacity: 1;
@@ -3130,8 +3107,8 @@ blockquote, .blockquote {
                         right: 5px;
                     };
                     &.owl-next {
-                        right: 0 !important;
                         left: 0 !important;
+                        right: 0 !important;
                     }
                 }
             }
@@ -3168,21 +3145,6 @@ blockquote, .blockquote {
         }
     }
 
-    .courses-topbar {
-        .offset-lg-4 {
-            margin-right: 0%;
-
-            &.offset-md-1 {
-                margin-right: 8.3333333333%;
-                margin-left: 0%;
-            }
-        }
-        .col-md-5 {
-            flex: 0 0 41.6666666667%;
-            max-width: 41.6666666667%;
-        }
-    }
-
 }
 @media only screen and (min-width: 1200px) and (max-width: 1275px) {
 
@@ -3190,22 +3152,22 @@ blockquote, .blockquote {
         &.owl-theme {
             .owl-nav {
                 [class*=owl-] {
-                    right: -30px;
+                    left: -30px;
 
                     &.owl-next {
-                        right: auto;
-                        left: -30px;
+                        left: auto;
+                        right: -30px;
                     }
                 }
             }
             &:hover, &:focus {
                 .owl-nav {
                     [class*=owl-] {
-                        right: -40px;
+                        left: -40px;
 
                         &.owl-next {
-                            right: auto;
-                            left: -40px;
+                            left: auto;
+                            right: -40px;
                         }
                     }
                 }
@@ -3244,22 +3206,22 @@ blockquote, .blockquote {
         &.owl-theme {
             .owl-nav {
                 [class*=owl-] {
-                    right: -30px;
+                    left: -30px;
 
                     &.owl-next {
-                        right: auto;
-                        left: -30px;
+                        left: auto;
+                        right: -30px;
                     }
                 }
             }
             &:hover, &:focus {
                 .owl-nav {
                     [class*=owl-] {
-                        right: -40px;
+                        left: -40px;
 
                         &.owl-next {
-                            right: auto;
-                            left: -40px;
+                            left: auto;
+                            right: -40px;
                         }
                     }
                 }
@@ -3271,22 +3233,22 @@ blockquote, .blockquote {
         &.owl-theme {
             .owl-nav {
                 [class*=owl-] {
-                    right: -30px;
+                    left: -30px;
 
                     &.owl-next {
-                        right: auto;
-                        left: -30px;
+                        left: auto;
+                        right: -30px;
                     }
                 }
             }
             &:hover, &:focus {
                 .owl-nav {
                     [class*=owl-] {
-                        right: -40px;
+                        left: -40px;
 
                         &.owl-next {
-                            right: auto;
-                            left: -40px;
+                            left: auto;
+                            right: -40px;
                         }
                     }
                 }
