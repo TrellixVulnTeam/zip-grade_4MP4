@@ -105,6 +105,10 @@ import { EditAccountPageComponent } from './components/pages/edit-account-page/e
 import { EditBillingAddressPageComponent } from './components/pages/edit-billing-address-page/edit-billing-address-page.component';
 import { EditShippingAddressPageComponent } from './components/pages/edit-shipping-address-page/edit-shipping-address-page.component';
 import { QuizzesComponent } from './quizzes/quizzes.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ApiService } from './services/api.service';
+import { StudentListComponent } from './student-list/student-list.component';
+import { ClassListComponent } from './class-list/class-list.component';
 
 @NgModule({
   declarations: [
@@ -210,13 +214,16 @@ import { QuizzesComponent } from './quizzes/quizzes.component';
     EditAccountPageComponent,
     EditBillingAddressPageComponent,
     EditShippingAddressPageComponent,
-    QuizzesComponent
+    QuizzesComponent,
+    StudentListComponent,
+    ClassListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

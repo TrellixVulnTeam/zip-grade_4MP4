@@ -4,61 +4,45 @@
     <div class="container">
         <div class="page-title-content">
             <h2>All Quizzes</h2>
+            <input id="file" type="file" accept=".xlsx" #inputFile (change)="fileUpload($event.target.files)">
+
         </div>
         <div class="page-content recent-orders-table table-responsive">
-            <table class="table">
+            <table class="table" *ngIf="!tmp">
                 <thead>
                     <tr>
-                        <th>Order</th>
-                        <th>Date</th>
-                        <th>Status</th>
-                        <th>Total</th>
-                        <th>Actions</th>
+                        <th>Id</th>
+                        <th>ClassName</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>#074145O5</td>
-                        <td>October 18, 2019</td>
-                        <td>Completed</td>
-                        <td>$49.00 for 1 item</td>
+                    <tr *ngFor="let item of data">
+                        <td>{{item.id}}</td>
+                        <td>{{item.class_name}}</td>
                         <td><a routerLink="/single-courses" class="view-button">View</a></td>
                     </tr>
+                  
+                </tbody>
+            </table>
+
+            <table class="table" *ngIf="tmp">
+                <thead>
                     <tr>
-                        <td>#074145O6</td>
-                        <td>October 18, 2019</td>
-                        <td>On Hold</td>
-                        <td>$49.00 for 1 item</td>
+                        <th>Class Code</th>
+                        <th>Class Name</th>
+                        <th>Student Code</th>
+                        <th>Student Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of tmpData">
+                        <td>{{item.classCode}}</td>
+                        <td>{{item.className}}</td>
+                        <td>{{item.studentCode}}</td>
+                        <td>{{item.studentName}}</td>
                         <td><a routerLink="/single-courses" class="view-button">View</a></td>
                     </tr>
-                    <tr>
-                        <td>#074145O7</td>
-                        <td>October 18, 2019</td>
-                        <td>Completed</td>
-                        <td>$49.00 for 1 item</td>
-                        <td><a routerLink="/single-courses" class="view-button">View</a></td>
-                    </tr>
-                    <tr>
-                        <td>#074145O5</td>
-                        <td>October 18, 2019</td>
-                        <td>Completed</td>
-                        <td>$49.00 for 1 item</td>
-                        <td><a routerLink="/single-courses" class="view-button">View</a></td>
-                    </tr>
-                    <tr>
-                        <td>#074145O6</td>
-                        <td>October 18, 2019</td>
-                        <td>On Hold</td>
-                        <td>$49.00 for 1 item</td>
-                        <td><a routerLink="/single-courses" class="view-button">View</a></td>
-                    </tr>
-                    <tr>
-                        <td>#074145O7</td>
-                        <td>October 18, 2019</td>
-                        <td>Completed</td>
-                        <td>$49.00 for 1 item</td>
-                        <td><a routerLink="/single-courses" class="view-button">View</a></td>
-                    </tr>
+                  
                 </tbody>
             </table>
         </div>
