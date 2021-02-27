@@ -109,6 +109,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { ApiService } from './services/api.service';
 import { StudentListComponent } from './student-list/student-list.component';
 import { ClassListComponent } from './class-list/class-list.component';
+import { QuestionComponent } from './question/question.component';
 
 @NgModule({
   declarations: [
@@ -216,7 +217,8 @@ import { ClassListComponent } from './class-list/class-list.component';
     EditShippingAddressPageComponent,
     QuizzesComponent,
     StudentListComponent,
-    ClassListComponent
+    ClassListComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,
