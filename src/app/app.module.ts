@@ -110,6 +110,8 @@ import { ApiService } from './services/api.service';
 import { StudentListComponent } from './student-list/student-list.component';
 import { ClassListComponent } from './class-list/class-list.component';
 import { QuestionComponent } from './question/question.component';
+import { MatTableModule } from '@angular/material';
+
 
 @NgModule({
   declarations: [
@@ -224,6 +226,9 @@ import { QuestionComponent } from './question/question.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
+  ],
+  exports:[
+    MatTableDataSource
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]

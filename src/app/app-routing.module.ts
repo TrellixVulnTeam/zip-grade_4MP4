@@ -58,12 +58,14 @@ import { EditShippingAddressPageComponent } from './components/pages/edit-shippi
 import { QuizzesComponent } from './quizzes/quizzes.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { ClassListComponent } from './class-list/class-list.component';
+import { QuestionComponent } from './question/question.component';
 
 const routes: Routes = [
     {path: '', component: HomePageOneComponent},
     {path: 'quizzes', component: QuizzesComponent},
     {path: 'students', component: StudentListComponent},
     {path: 'classes', component: ClassListComponent},
+    {path: 'question', component: QuestionComponent},
     {path: 'course-portal-online', component: HomePageTwoComponent},
     {path: 'distant-learning', component: HomePageThreeComponent},
     {path: 'modern-teaching', component: HomePageFourComponent},
