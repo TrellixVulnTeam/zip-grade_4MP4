@@ -110,7 +110,16 @@ import { ApiService } from './services/api.service';
 import { StudentListComponent } from './student-list/student-list.component';
 import { ClassListComponent } from './class-list/class-list.component';
 import { QuestionComponent } from './question/question.component';
- 
+import { MatSliderModule } from '@angular/material/slider';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatSelectModule} from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -225,7 +234,18 @@ import { QuestionComponent } from './question/question.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSliderModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatRadioModule,
+    MatIconModule,
+    BrowserAnimationsModule,
+    MatSelectModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   
   providers: [ApiService],

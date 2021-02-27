@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../services/api.service';
 import readXlsxFile from 'read-excel-file';
 import { Excel } from '../models/excel';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-quizzes',
@@ -9,25 +10,30 @@ import { Excel } from '../models/excel';
   styleUrls: ['./quizzes.component.scss']
 })
 export class QuizzesComponent implements OnInit {
-
-  constructor(private readonly apiService: ApiService) {
-   
-
-   }
-
-  data: any[];
   tmpData: Excel[];
   excelTmp: Excel;
   tmp: boolean;
-  ngOnInit(): void {
-    this.apiService.quizz().subscribe(data=>{
-      console.log(data);
-      this.data = data.data;
+
+  displayedColumns = ['quiz_name'];
+  dataSource = new MatTableDataSource();
+
+  constructor(private readonly api: ApiService) {
+    this.api.quiz().subscribe(data =>{
+      this.dataSource.data = data.data;
     });
     this.tmp = false;
 
   }
+ ngOnInit(): void {
+ 
+  }
+  onBlurMethod(item: any){
+    this.api.questionUpdate(item).subscribe(data=>{
+      console.log(data);
+    })
+  }
   public fileUpload(files) {
+    console.log(999)
     const file: File = files.item(0);
     this.tmpData=[];
     readXlsxFile(file).then((rows) => {

@@ -3,31 +3,25 @@
 <div >
     <div class="container">
         <div class="page-title-content">
-            <h2>All Quizzes</h2>
-            <h6>Sınıfları ve öğrencileri toplu olarak aktarmak için örnek
-                        <a href="http://quiz.uzeyrozcan.com/class-student.xlsx">excel şablonumuzu indirin
-                            <img width="24" src="assets/img/excel.png" alt="Excel download"></a></h6>
-            <input id="file" type="file" accept=".xlsx" #inputFile (change)="fileUpload($event.target.files)">
-
+            <h3>All Quizzes</h3>
         </div>
         <div class="page-content recent-orders-table table-responsive">
-            <table class="table" *ngIf="!tmp">
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>ClassName</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let item of data">
-                        <td>{{item.id}}</td>
-                        <td>{{item.class_name}}</td>
-                        <td><a routerLink="/single-courses" class="view-button">View</a></td>
-                    </tr>
-                  
-                </tbody>
-            </table>
 
+            <mat-table #table [dataSource]="dataSource"  *ngIf="!tmp">
+                <ng-container matColumnDef="quiz_name">
+                    <mat-header-cell *matHeaderCellDef> Quiz </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <mat-form-field floatLabel="never">
+                            <input matInput placeholder="Quiz Name" 
+                            (blur)="onBlurMethod(element)"
+                            [value]="element.content" [(ngModel)]="element.quiz_name">
+                        </mat-form-field>
+                    </mat-cell>
+                </ng-container> 
+
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+            </mat-table>
             <table  mat-table  class="table" *ngIf="tmp">
                 <thead>
                     <tr>
