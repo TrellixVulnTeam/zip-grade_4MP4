@@ -20,7 +20,12 @@ export class ApiService {
   quizz() {
     return this.http.get<Result>(this.url+'quizz');
   }
-
+  quizSave(form: Quiz) {
+    return this.http.post<Result>(this.url+'quiz/save',form);
+  }
+  quizDelete(form: Quiz) {
+    return this.http.post<Result>(this.url+'quiz/delete',form);
+  }
   students() {
     return this.http.get<Result>(this.url+'studentss');
   }
@@ -32,6 +37,9 @@ export class ApiService {
   }
   questionUpdate(form: Quiz) {
     return this.http.post<Result>(this.url+'question/update',form);
+  }
+  questionDelete(form: Quiz) {
+    return this.http.post<Result>(this.url+'question/delete',form);
   }
   questions() {
     return this.http.get<Result>(this.url+'question/list');

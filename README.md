@@ -1,9 +1,13 @@
 # Sınav OLuşturma
+Güncelleme işlemleri
+Sınava öğrenci ekleme çıkarma
+
+
+Tamamlananlar
+Silme işlemleri
 Listeleme ekranı 
 Yeni Kayıt ekranı
-Silme işlemleri
-Güncelleme işlemleri
-Sınavı - Sınıf ile birleştirme
+
 # Sınıf Oluşturma 
  Öğrenci listesini excel ile aktarma,
  Güncelleme,silme işlemleri
@@ -11,6 +15,10 @@ Sınavı - Sınıf ile birleştirme
 # Öğrenci Oluşturma 
 Öğrenci mail adresi bilgisi
 Mail ile sisteme giriş yapma işlemleri
+students
+    sayfa yüklendiğinde class bilgilerini otomatik seçili gelmesi gerekiyor.
+    Student list ekranında silme için buton eklenmeli.
+
 
 # Soru Oluşturma 
 Soru ve açıklamasını girme,

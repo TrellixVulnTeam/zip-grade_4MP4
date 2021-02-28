@@ -41,7 +41,7 @@
                         <mat-header-cell *matHeaderCellDef> Class </mat-header-cell>
                         <mat-cell *matCellDef="let element">
                             <mat-select  [(ngModel)]="element.class" (ngModelChange)="onFoodSelection1(element)"  multiple>
-                                <mat-option *ngFor="let item of class" [value]="item">{{item.name}}</mat-option>
+                                <mat-option *ngFor="let item of classList" [value]="item" >{{item.name}}</mat-option>
                               </mat-select>
                         </mat-cell>
                     </ng-container>

@@ -3,11 +3,12 @@
 <div >
     <div class="container">
         <div class="page-title-content">
-            <h3>All Quizzes</h3>
+           
 
         </div>
         <div class="page-content recent-orders-table table-responsive">
-
+            <h3>All Quizzes</h3>
+            <h3 (click)="new()">Yeni Kayıt</h3>
             <mat-table #table [dataSource]="dataSource"  *ngIf="!tmp">
                 <ng-container matColumnDef="quiz_name">
                     <mat-header-cell *matHeaderCellDef> Quiz </mat-header-cell>
@@ -18,12 +19,21 @@
                             [value]="element.content" [(ngModel)]="element.quiz_name">
                         </mat-form-field>
                     </mat-cell>
+                  
                 </ng-container> 
-
+                <ng-container matColumnDef="edit">
+                    <mat-header-cell *matHeaderCellDef> # </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <a  style="cursor: pointer;" 
+                                            (click)="deleteRow(element)" 
+                                                                    class="read-more-btn">
+                            Sil <i class='bx bx-right-arrow-alt'></i></a>
+                    </mat-cell>
+                </ng-container> 
                 <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
                 <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
             </mat-table>
-            <table  mat-table  class="table" *ngIf="tmp">
+        <!--<table  mat-table  class="table" *ngIf="tmp">
                 <thead>
                     <tr>
                         <th>Class Code</th>
@@ -43,6 +53,7 @@
                   
                 </tbody>
             </table>
+        -->
         </div>
     </div>
 </div>

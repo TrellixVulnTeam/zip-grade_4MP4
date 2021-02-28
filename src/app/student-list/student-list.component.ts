@@ -18,7 +18,7 @@ export class StudentListComponent implements OnInit {
   dataSource = new MatTableDataSource();
   tmp: boolean;
   toppingList: string[] = ['10-A','10-B','9-C','9-A'];
-  class: Class[];
+  classList: Class[];
   toppings = new FormControl();
 
   
@@ -26,9 +26,10 @@ export class StudentListComponent implements OnInit {
 
   constructor(private readonly api: ApiService) {
     this.tmp = false;
-    this.onLoad();
+  
     this.api.classes().subscribe(data =>{
-      this.class = data.data;
+      this.classList = data.data;
+      this.onLoad();
     });
   }
   ngOnInit(): void {
@@ -43,6 +44,7 @@ export class StudentListComponent implements OnInit {
     this.api.student().subscribe(data => {
       this.dataSource.data = data.data;
       this.tmp = true;
+      
     });
 
   }

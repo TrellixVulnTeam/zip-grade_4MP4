@@ -3,6 +3,8 @@ import { ApiService } from '../services/api.service';
 import readXlsxFile from 'read-excel-file';
 import { Excel } from '../models/excel';
 import { MatTableDataSource } from '@angular/material/table';
+import { Class } from '../models/class';
+import { Quiz } from '../models/quiz';
 
 @Component({
   selector: 'app-quizzes',
@@ -13,16 +15,20 @@ export class QuizzesComponent implements OnInit {
   tmpData: Excel[];
   excelTmp: Excel;
   tmp: boolean;
+  quiz: Quiz;
 
-  displayedColumns = ['quiz_name'];
+  displayedColumns = ['quiz_name','edit'];
   dataSource = new MatTableDataSource();
 
   constructor(private readonly api: ApiService) {
+    this.onLoad();
+    this.tmp = false;
+
+  }
+  onLoad(){
     this.api.quiz().subscribe(data =>{
       this.dataSource.data = data.data;
     });
-    this.tmp = false;
-
   }
  ngOnInit(): void {
  
@@ -31,6 +37,21 @@ export class QuizzesComponent implements OnInit {
     this.api.questionUpdate(item).subscribe(data=>{
       console.log(data);
     })
+  }
+  deleteRow(item: any){
+    this.api.quizDelete(item).subscribe(data=>{
+      this.onLoad();
+    })
+  }
+  new(){
+    console.log(999)
+    this.quiz = new Quiz();
+    this.quiz.quiz_name = 'New Class Def';
+    this.api.quizSave( this.quiz).subscribe(data=>{
+      console.log(data);
+      this.onLoad();
+    });
+    
   }
   public fileUpload(files) {
     console.log(999)
