@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Result } from '../models/result';
 import { Quiz } from '../models/quiz';
+import { Student } from '../models/student';
 
 
 @Injectable({
@@ -24,7 +25,7 @@ export class ApiService {
     return this.http.get<Result>(this.url+'studentss');
   }
   classes() {
-    return this.http.get<Result>(this.url+'classess');
+    return this.http.get<Result>(this.url+'class/list');
   }
   questionSave(form: Quiz) {
     return this.http.post<Result>(this.url+'question/save',form);
@@ -39,6 +40,17 @@ export class ApiService {
   quiz() {
     return this.http.get<Result>(this.url+'quiz/list');
   }
+  student() {
+    return this.http.get<Result>(this.url+'student/list');
+  }
+  studentUpdate(form: Quiz) {
+    return this.http.post<Result>(this.url+'student/update',form);
+  }
+  studentSave(form: Student) {
+    return this.http.post<Result>(this.url+'student/save',form);
+  }
+  studentClassSave(form: Student) {
+    return this.http.post<Result>(this.url+'student/sc/save',form);
+  }
 
-  
 }

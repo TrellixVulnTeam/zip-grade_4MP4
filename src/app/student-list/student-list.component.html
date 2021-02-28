@@ -1,28 +1,55 @@
 <app-header-style-one></app-header-style-one>
+<section class="story-area ptb-100">
+    <div>
+        <div class="container">
+            <div class="page-title-content">
+                <h3>All Student</h3>
+                <input id="file" type="file" accept=".xlsx" #inputFile (change)="fileUpload($event.target.files)">
 
+            </div>
+            <div class="page-content recent-orders-table table-responsive">
 
-<div >
-    <div class="container">
-        <div class="page-title-content">
-            <h2>All Quizzes</h2>
-        </div>
-        <div class="page-content recent-orders-table table-responsive">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>ClassName</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let item of data">
-                        <td>{{item.id}}</td>
-                        <td>{{item.name}}</td>
-                        <td><a routerLink="/single-courses" class="view-button">View</a></td>
-                    </tr>
-                  
-                </tbody>
-            </table>
+                <mat-table #table [dataSource]="dataSource" *ngIf="tmp">
+                    <ng-container matColumnDef="full_name">
+                        <mat-header-cell *matHeaderCellDef> Quiz </mat-header-cell>
+                        <mat-cell *matCellDef="let element">
+                            <mat-form-field floatLabel="never">
+                                <input matInput placeholder="Full Name" (blur)="onBlurMethod(element)"
+                                    [value]="element.full_name" [(ngModel)]="element.full_name">
+                            </mat-form-field>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container matColumnDef="mail">
+                        <mat-header-cell *matHeaderCellDef> Mail </mat-header-cell>
+                        <mat-cell *matCellDef="let element">
+                            <mat-form-field floatLabel="never">
+                                <input matInput placeholder="Mail" (blur)="onBlurMethod(element)" [value]="element.mail"
+                                    [(ngModel)]="element.mail">
+                            </mat-form-field>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container matColumnDef="student_id">
+                        <mat-header-cell *matHeaderCellDef> Student Id </mat-header-cell>
+                        <mat-cell *matCellDef="let element">
+                            <mat-form-field floatLabel="never">
+                                <input matInput placeholder="Student Id" (blur)="onBlurMethod(element)"
+                                    [value]="element.student_id" [(ngModel)]="element.student_id">
+                            </mat-form-field>
+                        </mat-cell>
+                    </ng-container>
+                    <ng-container matColumnDef="class">
+                        <mat-header-cell *matHeaderCellDef> Class </mat-header-cell>
+                        <mat-cell *matCellDef="let element">
+                            <mat-select  [(ngModel)]="element.class" (ngModelChange)="onFoodSelection1(element)"  multiple>
+                                <mat-option *ngFor="let item of class" [value]="item">{{item.name}}</mat-option>
+                              </mat-select>
+                        </mat-cell>
+                    </ng-container>
+
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                </mat-table>
+            </div>
         </div>
     </div>
-</div>
+</section>
