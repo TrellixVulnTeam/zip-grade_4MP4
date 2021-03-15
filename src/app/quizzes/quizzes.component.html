@@ -8,7 +8,7 @@
         </div>
         <div class="page-content recent-orders-table table-responsive">
             <h3>All Quizzes</h3>
-            <h3 (click)="new()">Yeni Kayıt</h3>
+            <h3 (click)="new()" style="cursor: pointer;">Yeni Kayıt</h3>
             <mat-table #table [dataSource]="dataSource"  *ngIf="!tmp">
                 <ng-container matColumnDef="quiz_name">
                     <mat-header-cell *matHeaderCellDef> Quiz </mat-header-cell>

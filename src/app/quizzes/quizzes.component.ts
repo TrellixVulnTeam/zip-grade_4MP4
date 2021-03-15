@@ -34,7 +34,7 @@ export class QuizzesComponent implements OnInit {
  
   }
   onBlurMethod(item: any){
-    this.api.questionUpdate(item).subscribe(data=>{
+    this.api.quizUpdate(item).subscribe(data=>{
       console.log(data);
     })
   }

@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Result } from '../models/result';
 import { Quiz } from '../models/quiz';
 import { Student } from '../models/student';
+import { Class } from '../models/class';
 
 
 @Injectable({
@@ -17,6 +18,7 @@ export class ApiService {
   getConfig() {
     return this.http.get(this.url+'user');
   }
+
   quizz() {
     return this.http.get<Result>(this.url+'quizz');
   }
@@ -26,12 +28,18 @@ export class ApiService {
   quizDelete(form: Quiz) {
     return this.http.post<Result>(this.url+'quiz/delete',form);
   }
+  quizUpdate(form: Quiz) {
+    return this.http.post<Result>(this.url+'quiz/update',form);
+  }
+
+
   students() {
     return this.http.get<Result>(this.url+'studentss');
   }
   classes() {
     return this.http.get<Result>(this.url+'class/list');
   }
+
   questionSave(form: Quiz) {
     return this.http.post<Result>(this.url+'question/save',form);
   }
@@ -45,9 +53,26 @@ export class ApiService {
     return this.http.get<Result>(this.url+'question/list');
   }
 
+
   quiz() {
     return this.http.get<Result>(this.url+'quiz/list');
   }
+
+  class() {
+    return this.http.get<Result>(this.url+'class/list');
+  }
+  classSave(form: Class) {
+    return this.http.post<Result>(this.url+'class/save',form);
+  }
+  classUpdate(form: Class) {
+    return this.http.post<Result>(this.url+'class/update',form);
+  }
+  classDelete(form: Class) {
+    return this.http.post<Result>(this.url+'class/delete',form);
+  }
+ 
+
+
   student() {
     return this.http.get<Result>(this.url+'student/list');
   }
@@ -60,5 +85,7 @@ export class ApiService {
   studentClassSave(form: Student) {
     return this.http.post<Result>(this.url+'student/sc/save',form);
   }
+
+  
 
 }
